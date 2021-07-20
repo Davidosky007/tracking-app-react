@@ -2,16 +2,16 @@ import actions from '../actions/index';
 
 const { ADD_VALUE } = actions;
 
-const valueReducer = (state = {}, action) => {
+const valueReducer = (valueState = {}, action) => {
   switch (action.type) {
     case ADD_VALUE: {
-      const newState = { ...state };
+      const newState = { ...valueState };
       const { unit } = action;
       newState[unit] = action.value;
       return newState;
     }
     default:
-      return state;
+      return valueState;
   }
 };
 
