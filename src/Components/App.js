@@ -1,10 +1,23 @@
 import './App.css';
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import PrivateRoutes from '../Containers/Routes';
+import Login from './Login';
+import Nav from './Nav';
+import Footer from './Footer';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <BrowserRouter>
+        <Nav />
+        <Switch>
+          <Route exact path={['/users/login', '/users/sign-up']} component={Login} />
+          <PrivateRoutes />
+        </Switch>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 
