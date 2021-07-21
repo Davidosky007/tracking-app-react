@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { fetchAllMeasurements } from '../logic/api';
-import { loadToken } from '../logic/storage';
+import { fetchAllMeasurements } from '../helpers/api';
+import { loadToken } from '../helpers/storage';
 import MainInfo from '../Components/MainInfo';
 import Nutrient from '../Components/Nutrients';
-import newDate, { getMonths } from '../logic/months';
-import { getMeasurementsByDate, total, last } from '../logic/measurements';
+import newDate, { getMonths } from '../helpers/months';
+import { getMeasurementsByDate, total, last } from '../helpers/measurements';
 
 const Home = (props) => {
   const {
