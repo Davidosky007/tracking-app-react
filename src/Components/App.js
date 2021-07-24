@@ -1,22 +1,19 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import PrivateRoutes from '../Containers/Routes';
-import Login from './Login';
-import Nav from './Nav';
-import Footer from './Footer';
+import Home from "./Home";
+import Dashboard from "./Dashboard";
+
 
 function App() {
   return (
-    <>
+    <div className="App">
       <BrowserRouter>
-        <Nav />
         <Switch>
-          <Route exact path={['/users/login', '/users/sign-up']} component={Login} />
-          <PrivateRoutes />
+          <Route exact path={"/"} component={Home} />
+          <Route exact path={"/dashboard"} component={Dashboard} />
         </Switch>
-        <Footer />
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
