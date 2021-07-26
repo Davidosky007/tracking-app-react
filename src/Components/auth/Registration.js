@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { useState } from 'react';
+import { useLocation } from 'react-router';
 
-class Registration extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: "",
-      password: "",
-      password_confirmation: "",
-      registrationErrors: ""
-    }
+const Registration = () => {
+  const [redirect, setRedirect] = useState();
+  const [error, setError] = useState();
 
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleChange = this.handleChange.bind(this);
-  }
+  const location = useLocation();
+  const path = location.pathname.split('/')[2];
+
+  const signUp = path !== "logged_in";
+  const submitValue = signUp ? 'Sign Up' : 'Login';
+  const endpoint = signUp ? 'users' : 'Login';
+  const validatePassword = signUp ? <input className="field m-b-20 background-blue color-white" id="rPassword" type="password" placeholder="reapeat password" /> : <div />;
+  const link = signUp ? <a href="/users/login">Login</a> : <a href="/users/sign-up">Sign Up</a>;
+
   handleSubmit(e) {
     const {
       email,
@@ -29,11 +31,14 @@ class Registration extends Component {
       }
     },
     { withCredentials: true }
-    ).then(res => {
-      console.log("Registration res", res);
-    }).catch(err => {
-      console.log("resgitration error", err);
-    })
+    ).then(response => {
+        if (response.data.status === "created") {
+          this.props.handleSuccessfulAuth(response.data);
+        }
+      })
+      .catch(error => {
+        console.log("registration error", error);
+      });
     
     e.preventDefault();
   }
