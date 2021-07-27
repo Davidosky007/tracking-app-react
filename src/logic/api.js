@@ -31,6 +31,7 @@ const saveMeasurement = async (id, value, token) => {
 const fetchAllMeasurements = async (token) => {
   const response = await fetch(`${base}/measurements`, {
     mode: 'cors',
+    method: 'GET',
     headers: {
       Authorization: `Bearer ${token}`,
     },
