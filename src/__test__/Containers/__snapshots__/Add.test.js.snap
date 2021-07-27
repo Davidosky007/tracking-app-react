@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add renders correctly 1`] = `
+<div
+  className="add-wrapper p-l-20 p-r-20"
+>
+  <div
+    className="add-card flex space-between align-center m-b-20 p-l-10 p-r-10"
+  >
+    <div
+      className="color-gray medium input-title flex"
+    >
+      unit1
+    </div>
+    <input
+      className="input"
+      id="unit1"
+      onChange={[Function]}
+      placeholder="0"
+      type="number"
+      value="1"
+    />
+    <button
+      className="submit-button color-dark-gray medium"
+      onClick={[Function]}
+      type="submit"
+    >
+      +
+    </button>
+  </div>
+</div>
+`;

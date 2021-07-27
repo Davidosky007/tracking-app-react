@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Progress renders correctly 1`] = `
+<div
+  className="p-l-20 p-r-20 progress"
+>
+  <div
+    className="m-b-20"
+  >
+    <select
+      className="options background-blue color-white"
+      onChange={[Function]}
+      value="Weight"
+    >
+      <option>
+        Weight
+      </option>
+      <option>
+        Energy
+      </option>
+      <option>
+        Energy burned
+      </option>
+      <option>
+        Fats
+      </option>
+      <option>
+        Saturated fats
+      </option>
+      <option>
+        Water
+      </option>
+      <option>
+        Sugar
+      </option>
+      <option>
+        Carbonhydrates
+      </option>
+      <option>
+        Protein
+      </option>
+    </select>
+  </div>
+  <div />
+</div>
+`;

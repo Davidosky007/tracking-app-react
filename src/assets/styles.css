@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+.nav {
+  height: 80px;
+  width: 100%;
+  top: 0;
+}
+
+.title {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 25px;
+}
+
+.color-blue {
+  color: #62B5E5;
+}
+
+.background-blue {
+  background-color: #62B5E5;
+}
+
+.color-gray {
+  color: #67899c;
+}
+
+.background-gray {
+  background-color: #67899c;
+}
+
+.color-dark-gray {
+  color: #374750;
+}
+
+.background-dark-gray {
+  background-color: #374750;
+}
+
+.color-green {
+  color: #ADDC91;
+}
+
+.background-green {
+  background-color: #ADDC91;
+}
+
+.color-white {
+  color: white;
+}
+
+.background-white {
+  background-color: white;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.big {
+  font-size: 30px;
+}
+
+.x-big {
+  font-size: 40px;
+}
+
+.medium {
+  font-size: 20px;
+}
+
+.m-big {
+  font-size: 25px;
+}
+
+.small {
+  font-size: small;
+}
+
+.x-small {
+  font-size: x-small;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.date {
+  margin-top: 95px;
+}
+
+.main-info {
+  width: 33%;
+  text-align: center;
+}
+
+.nutrient {
+  width: 50%;
+}
+
+.n-icon {
+  width: 50%;
+}
+
+.n-details {
+  width: 50%;
+}
+
+.nutrient-wrapper {
+  height: calc(60vh - 160px);
+}
+
+.info-wrapper {
+  height: calc(40vh - 160px);
+}
+
+.footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.icon {
+  display: block;
+  height: 80px;
+  width: 25%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+.m-r-10 {
+  margin-right: 10px;
+}
+
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.p-b-10 {
+  padding-bottom: 10px;
+}
+
+.p-l-10 {
+  padding-left: 10px;
+}
+
+.p-r-10 {
+  padding-right: 10px;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-l-20 {
+  margin-left: 20px;
+}
+
+.m-r-20 {
+  margin-right: 20px;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.p-b-20 {
+  padding-bottom: 20px;
+}
+
+.p-l-20 {
+  padding-left: 20px;
+}
+
+.p-r-20 {
+  padding-right: 20px;
+}
+
+.m-t-30 {
+  margin-top: 30px;
+}
+
+.m-b-30 {
+  margin-bottom: 30px;
+}
+
+.m-l-30 {
+  margin-left: 30px;
+}
+
+.m-r-30 {
+  margin-right: 30px;
+}
+
+.p-t-30 {
+  padding-top: 30px;
+}
+
+.p-b-30 {
+  padding-bottom: 30px;
+}
+
+.p-l-30 {
+  padding-left: 30px;
+}
+
+.p-r-30 {
+  padding-right: 30px;
+}
+
+.m-t-50 {
+  margin-top: 50px;
+}
+
+.m-b-50 {
+  margin-bottom: 50px;
+}
+
+.m-l-50 {
+  margin-left: 50px;
+}
+
+.m-r-50 {
+  margin-right: 50px;
+}
+
+.p-t-50 {
+  padding-top: 50px;
+}
+
+.p-b-50 {
+  padding-bottom: 50px;
+}
+
+.p-l-50 {
+  padding-left: 50px;
+}
+
+.p-r-50 {
+  padding-right: 50px;
+}
+
+.add-wrapper {
+  margin-top: 100px;
+}
+
+.add-card {
+  padding: 10px;
+  min-height: 30px;
+  border: 1px solid #9acce9;
+  border-radius: 4px;
+}
+
+.input-title {
+  width: 50%;
+}
+
+.input {
+  border: none;
+  appearance: textfield;
+  width: 10%;
+}
+
+.submit-button {
+  background-color: transparent;
+  border: none;
+  height: 30px;
+  width: 20px;
+}
+
+.login {
+  width: 70%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.field {
+  display: block;
+  width: 100%;
+  border: none;
+  height: 30px;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.login-btn {
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  min-width: 100px;
+}
+
+.progress {
+  margin-top: 100px;
+}
+
+.options {
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=styles.css.map */

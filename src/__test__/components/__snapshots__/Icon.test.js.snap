@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon renders correctly 1`] = `
+<a
+  className="icon background-dark-gray color-white"
+  href=""
+  onClick={[Function]}
+>
+  <div>
+    <div
+      className=" big"
+    />
+    <div
+      className="small m-top-10"
+    >
+      
+    </div>
+  </div>
+</a>
+`;

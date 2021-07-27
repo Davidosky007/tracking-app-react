@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
-import rootReducer from './reducers/index';
-import './index.css';
-import App from '../src/components/App';
 import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import App from './Components/App';
+import rootReducer from './reducers/index';
+import './assets/reset.css';
+import './assets/styles.css';
 
 const state = {
   units: [],
@@ -30,12 +31,11 @@ const state = {
 
 const store = createStore(rootReducer, state);
 
-
 ReactDOM.render(
   <React.StrictMode>
-  <Provider store={store}>
-    <App />
-  </Provider>
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

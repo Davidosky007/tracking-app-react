@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<footer
+  className="flex fixed footer"
+>
+  <a
+    className="icon background-dark-gray color-white"
+    href="/add"
+    onClick={[Function]}
+  >
+    <div>
+      <div
+        className="fas fa-plus-square big"
+      />
+      <div
+        className="small m-top-10"
+      >
+        Add Measure.
+      </div>
+    </div>
+  </a>
+  <a
+    className="icon background-dark-gray color-white"
+    href="/"
+    onClick={[Function]}
+  >
+    <div>
+      <div
+        className="fas fa-home big"
+      />
+      <div
+        className="small m-top-10"
+      >
+        Home
+      </div>
+    </div>
+  </a>
+  <a
+    className="icon background-dark-gray color-white"
+    href="/progress"
+    onClick={[Function]}
+  >
+    <div>
+      <div
+        className="fas fa-weight big"
+      />
+      <div
+        className="small m-top-10"
+      >
+        Progress
+      </div>
+    </div>
+  </a>
+  <a
+    className="icon background-dark-gray color-white"
+    href="/users/login"
+    onClick={[Function]}
+  >
+    <div>
+      <div
+        className="fas fa-sign-out-alt big"
+      />
+      <div
+        className="small m-top-10"
+      >
+        Logout
+      </div>
+    </div>
+  </a>
+</footer>
+`;

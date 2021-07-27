@@ -1,0 +1,22 @@
+$blue: #62b5e5;
+$gray: #67899c;
+$dark-gray: #374750;
+$green: #addc91;
+
+$colors: (
+  blue: $blue,
+  gray: $gray,
+  dark-gray: $dark-gray,
+  green: $green,
+  white: white,
+);
+
+@each $key, $value in $colors {
+  .color-#{"" + $key} {
+    color: $value;
+  }
+
+  .background-#{"" + $key} {
+    background-color: $value;
+  }
+}

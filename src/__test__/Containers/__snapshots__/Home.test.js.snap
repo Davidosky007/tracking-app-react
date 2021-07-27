@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly 1`] = `
+<div>
+  <div
+    className="flex space-between date"
+  >
+    <button
+      className="color-gray"
+      onClick={[Function]}
+      type="button"
+    >
+      &lt;
+    </button>
+    <p
+      className="color-gray"
+    >
+      1-February-1
+    </p>
+    <button
+      className="color-gray"
+      onClick={[Function]}
+      type="button"
+    >
+      &gt;
+    </button>
+  </div>
+  <div
+    className="p-l-20 p-r-20"
+  >
+    <div
+      className="info-wrapper m-t-30 flex"
+    />
+    <div
+      className="nutrient-wrapper m-t-30 flex wrap center"
+    />
+  </div>
+</div>
+`;

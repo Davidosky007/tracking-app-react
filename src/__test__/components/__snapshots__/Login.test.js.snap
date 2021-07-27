@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login renders correctly 1`] = `
+<div
+  className="login text-center"
+>
+  <form>
+    <input
+      className="field m-b-20 background-blue color-white"
+      id="name"
+      placeholder="username"
+      type="text"
+    />
+    <input
+      className="field m-b-20 background-blue color-white"
+      id="password"
+      placeholder="password"
+      type="password"
+    />
+    <input
+      className="field m-b-20 background-blue color-white"
+      id="rPassword"
+      placeholder="reapeat password"
+      type="password"
+    />
+    <input
+      className="login-btn background-gray m-b-30"
+      onClick={[Function]}
+      type="submit"
+      value="Sign Up"
+    />
+  </form>
+  <p>
+    or 
+  </p>
+  <a
+    href="/users/login"
+  >
+    Login
+  </a>
+</div>
+`;

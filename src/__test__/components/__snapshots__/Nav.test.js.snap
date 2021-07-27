@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav renders correctly 1`] = `
+<div
+  className="background-blue nav fixed"
+>
+  <h1
+    className="color-white title bold large"
+  >
+    Healthify
+  </h1>
+</div>
+`;

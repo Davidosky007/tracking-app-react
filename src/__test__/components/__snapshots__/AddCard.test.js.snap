@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddCard renders correctly 1`] = `
+<div
+  className="add-card flex space-between align-center m-b-20 p-l-10 p-r-10"
+>
+  <div
+    className="color-gray medium input-title flex"
+  >
+    Title
+  </div>
+  <input
+    className="input"
+    id="Title"
+    onChange={[Function]}
+    placeholder="0"
+    type="number"
+    value="5"
+  />
+  <button
+    className="submit-button color-dark-gray medium"
+    onClick={[Function]}
+    type="submit"
+  >
+    +
+  </button>
+</div>
+`;

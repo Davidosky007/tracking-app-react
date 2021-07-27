@@ -1,25 +1,23 @@
-import React from "react";
-import { useState } from "react";
+import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Home from "./Home";
-import Dashboard from "./Dashboard";
-
+import PrivateRoutes from '../Containers/PrivateRoutes';
+import Login from './Login';
+import Nav from './Nav';
+import Footer from './Footer';
 
 function App() {
-  const [loggedInStatus, setLoggedInStatus] = useState("NOT_LOGGED_IN");
-  const [user, setUser] = useState({});
   return (
-    <div className="App">
+    <>
       <BrowserRouter>
+        <Nav />
         <Switch>
-          <Route exact path={"/"} render={props => (
-            <Home />
-          )} />
-          <Route exact path={"/dashboard"} component={Dashboard} />
+          <Route exact path={['/users/login', '/users/sign-up']} component={Login} />
+          <PrivateRoutes />
         </Switch>
+        <Footer />
       </BrowserRouter>
-    </div>
+    </>
   );
-}                              
+}
 
 export default App;

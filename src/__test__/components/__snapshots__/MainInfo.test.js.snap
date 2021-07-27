@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainInfo renders correctly 1`] = `
+<div
+  className="main-info"
+>
+  <p
+    className="big m-b-10 color-dark-gray"
+  />
+  <i
+    className="undefined x-small color-gray"
+  />
+  <p
+    className="small color-gray"
+  >
+    
+  </p>
+  <p
+    className="x-small color-gray"
+  />
+</div>
+`;

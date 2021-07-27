@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nutrients renders correctly 1`] = `
+<div
+  className="flex nutrient center p-l-20 p-r-20 m-b-50"
+>
+  <div
+    className="undefined n-icon x-big color-blue text-center"
+  />
+  <div
+    className="n-details m-l-20"
+  >
+    <div
+      className="color-gray overflow-hidden"
+    >
+      
+    </div>
+    <div
+      className="color-gray m-big"
+    >
+      <span
+        className="x-small"
+      >
+        (undefined)
+      </span>
+    </div>
+  </div>
+</div>
+`;
