@@ -5,9 +5,10 @@ const icons = {
   Fats: 'fas fa-tint',
   'Saturated fats': 'fas fa-bacon',
   Water: 'fas fa-water',
-  Sugar: 'fas fa-cubes',
+  'Blood Sugar': 'fas fa-cubes',
   Carbonhydrates: 'fas fa-bread-slice',
   Protein: 'fas fa-egg',
+  'Blood Pressure': 'fas fa-water',
 };
 
 const measurementUnits = {
@@ -17,9 +18,10 @@ const measurementUnits = {
   Fats: 'g',
   'Saturated fats': 'g',
   Water: 'lt',
-  Sugar: 'g',
+  'Blood Sugar': 'mmol/L',
   Carbonhydrates: 'g',
   Protein: 'g',
+  'Blood Pressure': 'mmHg',
 };
 
 const options = [
