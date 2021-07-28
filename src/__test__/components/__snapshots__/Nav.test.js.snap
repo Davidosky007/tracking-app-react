@@ -7,7 +7,7 @@ exports[`Nav renders correctly 1`] = `
   <h1
     className="color-white title bold large"
   >
-    Healthify
+    TrackLife
   </h1>
 </div>
 `;
