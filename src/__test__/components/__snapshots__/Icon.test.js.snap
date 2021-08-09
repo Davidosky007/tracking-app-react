@@ -3,7 +3,7 @@
 exports[`Icon renders correctly 1`] = `
 <a
   className="icon background-dark-gray color-white"
-  href=""
+  href="/"
   onClick={[Function]}
 >
   <div>

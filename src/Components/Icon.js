@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Icon = (props) => {
   const {
@@ -15,12 +15,12 @@ const Icon = (props) => {
   };
   const active = isActive();
   return (
-    <a className={`icon background-${active} color-white`} href={path} onClick={clickHandler}>
+    <Link className={`icon background-${active} color-white`} to={path} onClick={clickHandler}>
       <div>
         <div className={`${icon} big`} />
         <div className="small m-top-10">{title}</div>
       </div>
-    </a>
+    </Link>
   );
 };
 
