@@ -4,13 +4,11 @@ const { GET_MEASUREMENTS } = actions;
 
 const measurementsReducer = (state = {}, action) => {
   switch (action.type) {
-    case GET_MEASUREMENTS: {
-      const newState = { ...state };
-      Object.keys(action.measurements).forEach((key) => {
-        newState[key] = action.measurements[key];
-      });
-      return newState;
-    }
+    case GET_MEASUREMENTS:
+      return {
+        ...state,
+        ...action.measurements,
+      };
     default:
       return state;
   }
