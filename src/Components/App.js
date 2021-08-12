@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Nav />
         <Switch>
-          <Route exact path={['/users/login', '/users/sign-up']} component={Login} />
+          <Route exact path={['/users/session', '/users/sign-up']} component={Login} />
           <PrivateRoutes />
         </Switch>
         <Footer />

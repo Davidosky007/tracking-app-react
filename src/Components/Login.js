@@ -12,9 +12,9 @@ const Login = () => {
 
   const signUp = path !== 'login';
   const submitValue = signUp ? 'Sign Up' : 'Login';
-  const endpoint = signUp ? 'users' : 'login';
+  const endpoint = signUp ? 'users' : 'session';
   const validatePassword = signUp ? <input className="field m-b-20 background-blue color-white" id="rPassword" type="password" placeholder="reapeat password" /> : <div />;
-  const link = signUp ? <a href="/users/login">Login</a> : <a href="/users/sign-up">Sign Up</a>;
+  const link = signUp ? <a href="/users/session">Login</a> : <a href="/users/sign-up">Sign Up</a>;
 
   const handleSubmit = async (e) => {
     e.preventDefault();

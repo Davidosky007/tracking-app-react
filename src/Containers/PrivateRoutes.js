@@ -58,7 +58,7 @@ const PrivateRoutes = (props) => {
       </>
     );
   } else {
-    routes = <Redirect to={{ pathname: '/users/login' }} />;
+    routes = <Redirect to={{ pathname: '/users/session' }} />;
   }
 
   return (

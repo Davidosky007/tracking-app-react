@@ -11,7 +11,7 @@ const Footer = () => {
       <Icon icon="fas fa-plus-square" path="/add" title="Add Measure." />
       <Icon icon="fas fa-home" path="/" title="Home" />
       <Icon icon="fas fa-weight" path="/progress" title="Progress" />
-      <Icon icon="fas fa-sign-out-alt" path="/users/login" title="Logout" clickHandler={handleLogout} />
+      <Icon icon="fas fa-sign-out-alt" path="/users/session" title="Logout" clickHandler={handleLogout} />
     </footer>
   );
 };
