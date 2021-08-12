@@ -54,7 +54,7 @@ exports[`Footer renders correctly 1`] = `
   </a>
   <a
     className="icon background-dark-gray color-white"
-    href="/users/login"
+    href="/users/session"
     onClick={[Function]}
   >
     <div>
