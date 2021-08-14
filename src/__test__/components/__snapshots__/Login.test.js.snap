@@ -34,7 +34,7 @@ exports[`Login renders correctly 1`] = `
     or 
   </p>
   <a
-    href="/users/session"
+    href="/session/login"
   >
     Login
   </a>
