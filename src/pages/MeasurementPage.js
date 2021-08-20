@@ -33,9 +33,9 @@ const MeasurementPage = ({ isLoggedIn, dataInfo, measureData, userToken }) => {
     );
     changeToken(store.getState().userStore.userToken.token);
     getMeasurements(measureData);
-  }, [fetchRequested, measureData]);
+  }, [fetchRequested]);
 
-  const measurementInfo = dataInfo ? dataInfo.find((el) => el.id === id) : [];
+  const measurementInfo = dataInfo ? dataInfo.find((el) => el.id == id) : [];
   return (
     <div className="Page w-100">
       {checkToken() && dataInfo ? (
