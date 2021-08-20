@@ -39,7 +39,7 @@ The projects consists of a tracking-app used to measure your progress on a diet/
 
 To get a local copy up and running follow these simple example steps.
 
-- Git clone git@github.com:abouhid/Tracking_app_frontend.git
+- Git clone https://github.com/Davidosky007/tracking-app-react.git
 - Move to the root directory in your command line
 - run `npm install`
 - run `npm start`

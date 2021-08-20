@@ -72,5 +72,5 @@ describe("SignIn", () => {
       ).toBeInTheDocument();
     });
     clearStorage();
-  }, 10000);
+  }, 100000);
 });
