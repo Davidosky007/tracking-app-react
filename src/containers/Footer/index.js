@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from 'react-router-dom';
 import "./index.css";
 
 import { BottomNavigationAction, BottomNavigation } from "@material-ui/core";
@@ -18,6 +19,12 @@ const Footer = () => {
   const handleChange = (newValue) => {
     setValue(newValue);
   };
+
+  const location = useLocation();
+  const path = location.pathname.split('/')[2];
+
+  const signUp = path !== 'signin';
+  const validatePassword = signUp;
 
   return (
     <BottomNavigation
@@ -53,15 +60,26 @@ const Footer = () => {
         }}
         icon={<FontAwesomeIcon className="m-1 text-white" icon={faChartPie} />}
       />
+      { validatePassword ? 
       <BottomNavigationAction
         className="p-1 text-white"
         label="More"
-        value="more"
+        value="signin"
+        // onClick={() => {
+        //   history.push("/profile");
+        // }}
+        icon={<FontAwesomeIcon className="m-1 text-white" icon={faEllipsisH} />}
+      /> : 
+        <BottomNavigationAction
+        className="p-1 text-white"
+        label="More"
+        value="signin"
         onClick={() => {
           history.push("/profile");
         }}
         icon={<FontAwesomeIcon className="m-1 text-white" icon={faEllipsisH} />}
       />
+      }
     </BottomNavigation>
   );
 };

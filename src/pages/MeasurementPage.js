@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useParams, useHistory, Redirect } from "react-router-dom";
 import { measureData, userData } from "../redux/actions";
 import PropTypes from "prop-types";
@@ -16,6 +16,7 @@ import store from "../redux/store";
 
 const MeasurementPage = ({ isLoggedIn, dataInfo, measureData, userToken }) => {
   const [show, setShow] = useState(false);
+  const isMountedRef = useRef(null);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -23,6 +24,7 @@ const MeasurementPage = ({ isLoggedIn, dataInfo, measureData, userToken }) => {
   const [fetchRequested, setFetchRequested] = useState(false);
   const history = useHistory();
   useEffect(() => {
+    isMountedRef.current = true;
     store.dispatch(
       userData({
         isLoggedIn: localStorage.getItem("isLoggedIn") === "true",
@@ -33,6 +35,7 @@ const MeasurementPage = ({ isLoggedIn, dataInfo, measureData, userToken }) => {
     );
     changeToken(store.getState().userStore.userToken.token);
     getMeasurements(measureData);
+    return () => isMountedRef.current = false;
   }, [fetchRequested]);
 
   const measurementInfo = dataInfo ? dataInfo.find((el) => el.id == id) : [];

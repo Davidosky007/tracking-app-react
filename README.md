@@ -24,7 +24,7 @@ The projects consists of a tracking-app used to measure your progress on a diet/
 
 ## Live Demo
 
-## [LiveVersion](https://test-final-appli.herokuapp.com/)
+## [LiveVersion](https://final-fianal.herokuapp.com)
 
 ## Built With
 

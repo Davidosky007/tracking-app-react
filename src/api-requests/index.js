@@ -3,7 +3,7 @@ import { measureData, userData } from "../redux/actions";
 import jwt from "jwt-decode";
 import store from "../redux/store";
 
-const URL = "https://tracklyfe.herokuapp.com";
+const URL = "https://final-fianal.herokuapp.com";
 
 export const changeToken = () => {
   const token = store.getState().userStore.userToken.token;
@@ -16,7 +16,7 @@ export const changeToken = () => {
 
 export const logInUser = async (data) => {
   return await axios({
-    url: `${URL}/auth/login`,
+    url: `${URL}/authentication`,
     data: JSON.stringify(data),
     method: "POST",
     headers: {

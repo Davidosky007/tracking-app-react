@@ -70,7 +70,7 @@ const UserPage = ({
               </Link>
             </div>
             <div className="p-2 mb-3 d-flex flex-column  align-items-center"></div>
-            <h5 className="mx-auto">Copyright © 2021 by Alexandre Bouhid </h5>
+            <h5 className="mx-auto">Copyright © 2021 by Bassey David</h5>
           </div>
         </Paper>
       ) : (
