@@ -1,0 +1,49 @@
+  const deleteMeasure = async (data) => {
+    await axios({
+      url: `http://localhost:3001/measurements/${data.measurement_id}/measures/${data.id}/`,
+      method: "DELETE",
+      headers: {
+        Authorization: `Basic ${userToken}`,
+      },
+    })
+      //   .then(function (response) {
+      //     const updatedMeasurements = measurements.map((obj) => {
+      //       if (obj.id === data.measurement_id) {
+      //         const index = obj.measures.map((el) => el.id).indexOf(data.id);
+      //         obj.measures.splice(index, 1);
+      //       }
+      //       return obj;
+      //     });
+
+      //     setMeasurements(updatedMeasurements);
+      //   })
+      .then(function (response) {
+        setFetchRequested(!fetchRequested);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
+
+    const addMeasure = async (data) => {
+    await axios({
+      url: `http://localhost:3001/measurements/${data.id}/measures`,
+      data: { value_of_measure: "321", measurement_id: data.id },
+      method: "POST",
+      headers: {
+        Authorization: `Basic ${userToken}`,
+      },
+    })
+      //   .then(function (response) {
+      //     const updatedMeasurements = measurements.map(
+      //       (obj) => [response.data].find((o) => o.id === obj.id) || obj
+      //     );
+      //     setMeasurements(updatedMeasurements);
+      //   })
+      .then(function (response) {
+        setFetchRequested(!fetchRequested);
+      })
+      .catch(function (error) {
+        return error;
+      });
+  };
